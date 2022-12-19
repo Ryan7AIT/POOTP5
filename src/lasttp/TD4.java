@@ -4,7 +4,7 @@ public class TD4 {
 
 	public static void main(String[] args) {
 
-		Division d = new Division(13,-1);
+		Division d = new Division(Integer.parseInt(args[0]),Integer.parseInt(args[1]));
 		
 		System.out.println(d.division());
 		

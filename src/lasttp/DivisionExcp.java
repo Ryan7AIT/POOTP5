@@ -1,5 +1,7 @@
 package lasttp;
 
+import java.util.InputMismatchException;
+
 public class DivisionExcp {
 	
 	private int num;
@@ -18,20 +20,12 @@ public class DivisionExcp {
 		
 		if(this.num < this.deno ) {
 			throw new LessException();
+			
 		}else {
-		
-		try {
 			int p = this.num / this.deno;	
 			System.out.println(p);
-			
 			return p;
-		}
-		
-		catch (ArithmeticException e){
-			System.out.println("U cant divide by 0 !!!");
-			
-			return (float) 0.0;
-		}
+
 		}
 		
 		
